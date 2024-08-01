@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #f8f8ff;
+  background-image: url("/pattern.svg");
+  background-size: 80%;
+  background-repeat: repeat;
+}
