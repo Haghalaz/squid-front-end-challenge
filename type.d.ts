@@ -48,7 +48,7 @@ interface Reference {
   gamification?: boolean;
 }
 
-interface DataResponse {
+interface PhotoDetails {
   _id: string;
   obtidoEm: string;
   origem: string;
