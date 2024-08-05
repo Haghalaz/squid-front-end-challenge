@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# Wake Creators (AKA Squid It) Front End Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">  
+<img width="960" src="src/assets/img/mockup.png" alt="Resultado Esperado" />
+</div>
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Proposta](#proposta)
+- [Technologies Used](#tecnologias-usadas)
+- [Resultado](#resultado-esperado-vs-resultado-entregue)
+- [Installation](#installation)
+- [Usage](#usage)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Proposta
 
-## Expanding the ESLint configuration
+Crie uma página HTML e use JavaScript para obter dados do JSON da requisição GET: `https://us-central1-squid-apis.cloudfunctions.net/test-front-basic`, listando o feed do Instagram da @squidapp. 
+Utilize CSS para personalizar o layout conforme a imagem fornecida, incluindo efeitos de hover para todas as imagens.
+Cada imagem deve ter um link que abre no Instagram em uma nova aba ao ser clicada. 
+Garanta a responsividade e uma boa experiência de usuário, incluindo loaders, tratamento de erros, animações e outros efeitos.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Resultado Esperado VS Resultado Entregue
 
-- Configure the top-level `parserOptions` property like this:
+<div align="center">
+<img width="40%" src="src/assets/img/challenge.jpeg" alt="Resultado Esperado" />
+<img width="40%" src="src/assets/img/result.png" alt="Resultado Entregue" />
+</div>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Tecnologias usadas
+- React: Uma biblioteca JavaScript para construir interfaces de usuário.
+- Vite: Uma ferramenta de build rápida que utiliza esbuild para desenvolvimento ágil e builds de produção otimizados.
+- Tailwind CSS: Um framework CSS utilitário para construir designs personalizados de forma rápida.
+- Biome: Uma ferramenta de linting, formatação e análise de código para manter a qualidade e a consistência do código.
+- SWR: React hook para busca de dados. Ele retorna dados do cache (stale), envia uma solicitação de fetch (revalidate) e retorna os dados atualizados.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Padrões de projetos
+- Atomic Design: Uma metodologia para criar sistemas de design consistentes e escaláveis, dividindo a interface do usuário em componentes atômicos, moleculares, organizacionais, de páginas e de templates.
+- Singleton: Um padrão de design que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
+
+## Installation
+1. Clone o repositório: ``git clone https://github.com/Haghalaz/squid-front-end-challenge.git``
+2. Navegue até o diretório do projeto: ``cd squid-front-end-challenge``
+3. Instale as dependências: ``npm install``
+4. Inicie o servidor de desenvolvimento: ``npm run dev``
+5. Abra seu navegador e vá para ``http://localhost:5173/``
+
+## Usage
+Feel free to explore the photos and links. If you have any questions or feedback, don't hesitate to reach out through the provided contact details.
