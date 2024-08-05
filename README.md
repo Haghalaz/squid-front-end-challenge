@@ -9,7 +9,7 @@
 - [Technologies Used](#tecnologias-usadas)
 - [Resultado](#resultado-esperado-vs-resultado-entregue)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Uso](#uso)
 
 ## Proposta
 
@@ -43,5 +43,5 @@ Garanta a responsividade e uma boa experiência de usuário, incluindo loaders, 
 4. Inicie o servidor de desenvolvimento: ``npm run dev``
 5. Abra seu navegador e vá para ``http://localhost:5173/``
 
-## Usage
-Feel free to explore the photos and links. If you have any questions or feedback, don't hesitate to reach out through the provided contact details.
+## Uso
+Sinta-se à vontade para explorar as fotos e links. Se tiver alguma dúvida ou feedback, não hesite em entrar em contato através dos detalhes fornecidos.
