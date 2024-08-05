@@ -25,6 +25,8 @@ Garanta a responsividade e uma boa experiência de usuário, incluindo loaders, 
 <img width="40%" src="src/assets/img/result.png" alt="Resultado Entregue" />
 </div>
 
+#### A demonstração pode ser vista aqui: https://haghalaz.github.io/squid-front-end-challenge/
+
 ## Tecnologias usadas
 - React: Uma biblioteca JavaScript para construir interfaces de usuário.
 - Vite: Uma ferramenta de build rápida que utiliza esbuild para desenvolvimento ágil e builds de produção otimizados.
