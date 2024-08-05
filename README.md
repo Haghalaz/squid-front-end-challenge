@@ -8,7 +8,7 @@
 - [Proposta](#proposta)
 - [Tecnologias usadas](#tecnologias-usadas)
 - [Resultado](#resultado-esperado-vs-resultado-entregue)
-- [Instalação](#installation)
+- [Instalação](#instalação)
 - [Uso](#uso)
 
 ## Proposta
@@ -37,7 +37,8 @@ Garanta a responsividade e uma boa experiência de usuário, incluindo loaders, 
 ## Padrões de projetos
 - **Atomic Design**: Uma metodologia para criar sistemas de design consistentes e escaláveis, dividindo a interface do usuário em componentes atômicos, moleculares, organizacionais, de páginas e de templates.
 - **Custom Hooks**: Abordagem no React para reutilizar lógica de estado entre componentes, encapsulando lógica de comportamento em funções reutilizáveis.
-## Installation
+  
+## Instalação
 1. Clone o repositório: ``git clone https://github.com/Haghalaz/squid-front-end-challenge.git``
 2. Navegue até o diretório do projeto: ``cd squid-front-end-challenge``
 3. Instale as dependências: ``npm install``
