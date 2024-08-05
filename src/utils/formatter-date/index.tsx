@@ -1,4 +1,4 @@
-export default function index(dateString: string): string {
+export default function FormatDate(dateString: string): string {
   const cleanDateString = dateString.replace(/[^\dT:.-]/g, "");
   const date = new Date(cleanDateString);
 
