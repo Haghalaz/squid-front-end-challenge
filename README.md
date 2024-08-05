@@ -4,7 +4,7 @@
 <img width="960" src="src/assets/img/mockup.png" alt="Resultado Esperado" />
 </div>
 
-## Table of Contents
+## Sumário
 - [Proposta](#proposta)
 - [Tecnologias usadas](#tecnologias-usadas)
 - [Resultado](#resultado-esperado-vs-resultado-entregue)
