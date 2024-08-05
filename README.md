@@ -6,9 +6,9 @@
 
 ## Table of Contents
 - [Proposta](#proposta)
-- [Technologies Used](#tecnologias-usadas)
+- [Tecnologias usadas](#tecnologias-usadas)
 - [Resultado](#resultado-esperado-vs-resultado-entregue)
-- [Installation](#installation)
+- [Instalação](#installation)
 - [Uso](#uso)
 
 ## Proposta
