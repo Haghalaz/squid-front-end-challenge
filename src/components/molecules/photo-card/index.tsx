@@ -42,7 +42,7 @@ export default function PhotoCard({ data }: { data: PhotoDetails }) {
           )}
         </CardItem>
 
-        <div className="flex px-2 justify-between items-center mt-4">
+        <div className="flex flex-wrap gap-2 px-2 justify-between items-center mt-4">
           <CardItem translateZ="20" className="flex gap-2 items-center">
             <Heart className="size-4" />
             <p className="text-xs truncate font-normal">{upvotes}</p>
