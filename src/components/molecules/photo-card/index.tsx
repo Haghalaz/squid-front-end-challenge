@@ -1,8 +1,8 @@
 import { AtSign, Calendar, Heart, MessageCircle } from "lucide-react";
 
-import { CardBody, CardContainer, CardItem } from "../../atoms/3d-card";
+import { CardBody, CardContainer, CardItem } from "@atoms/3d-card";
 
-import index from "../../../utils/formatter-date";
+import FormatDate from "@utils/formatter-date";
 
 export default function PhotoCard({ data }: { data: PhotoDetails }) {
   if (!data) return;
@@ -15,18 +15,11 @@ export default function PhotoCard({ data }: { data: PhotoDetails }) {
       <CardBody className="bg-gray-50 relative group/card border-black/[0.1] w-full h-auto rounded-xl p-4 border  ">
         <CardItem translateZ="80" className="w-full">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <img
-              className="size-full aspect-square object-cover rounded-md"
-              src={imagens.resolucaoMedia.url}
-              alt="Squit It Logo"
-            />
+            <img className="size-full aspect-square object-cover rounded-md" src={imagens.resolucaoMedia.url} alt="Squit It Logo" />
           </a>
 
           {hasUsersMention && (
-            <CardItem
-              translateZ="20"
-              className="group absolute top-2 right-2 grid place-items-end gap-2"
-            >
+            <CardItem translateZ="20" className="group absolute top-2 right-2 grid place-items-end gap-2">
               <div className="p-2 bg-gray-50 rounded-full">
                 <AtSign className="size-4" />
               </div>
@@ -55,7 +48,7 @@ export default function PhotoCard({ data }: { data: PhotoDetails }) {
 
           <CardItem translateZ="20" className="flex gap-2 items-center">
             <Calendar className="size-4" />
-            <p className="text-xs truncate font-normal">{index(criadoEm)}</p>
+            <p className="text-xs truncate font-normal">{FormatDate(criadoEm)}</p>
           </CardItem>
         </div>
       </CardBody>
