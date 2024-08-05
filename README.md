@@ -28,15 +28,15 @@ Garanta a responsividade e uma boa experiência de usuário, incluindo loaders, 
 #### A demonstração pode ser vista aqui: https://haghalaz.github.io/squid-front-end-challenge/
 
 ## Tecnologias usadas
-- React: Uma biblioteca JavaScript para construir interfaces de usuário.
-- Vite: Uma ferramenta de build rápida que utiliza esbuild para desenvolvimento ágil e builds de produção otimizados.
-- Tailwind CSS: Um framework CSS utilitário para construir designs personalizados de forma rápida.
-- Biome: Uma ferramenta de linting, formatação e análise de código para manter a qualidade e a consistência do código.
-- SWR: React hook para busca de dados. Ele retorna dados do cache (stale), envia uma solicitação de fetch (revalidate) e retorna os dados atualizados.
+- **React**: Uma biblioteca JavaScript para construir interfaces de usuário.
+- **Vite**: Uma ferramenta de build rápida que utiliza esbuild para desenvolvimento ágil e builds de produção otimizados.
+- **Tailwind CSS**: Um framework CSS utilitário para construir designs personalizados de forma rápida.
+- **Biome**: Uma ferramenta de linting, formatação e análise de código para manter a qualidade e a consistência do código.
+- **SWR**: React hook para busca de dados. Ele retorna dados do cache (stale), envia uma solicitação de fetch (revalidate) e retorna os dados atualizados.
 
 ## Padrões de projetos
-- Atomic Design: Uma metodologia para criar sistemas de design consistentes e escaláveis, dividindo a interface do usuário em componentes atômicos, moleculares, organizacionais, de páginas e de templates.
-
+- **Atomic Design**: Uma metodologia para criar sistemas de design consistentes e escaláveis, dividindo a interface do usuário em componentes atômicos, moleculares, organizacionais, de páginas e de templates.
+- **Custom Hooks**: Abordagem no React para reutilizar lógica de estado entre componentes, encapsulando lógica de comportamento em funções reutilizáveis.
 ## Installation
 1. Clone o repositório: ``git clone https://github.com/Haghalaz/squid-front-end-challenge.git``
 2. Navegue até o diretório do projeto: ``cd squid-front-end-challenge``
