@@ -36,7 +36,6 @@ Garanta a responsividade e uma boa experiência de usuário, incluindo loaders, 
 
 ## Padrões de projetos
 - Atomic Design: Uma metodologia para criar sistemas de design consistentes e escaláveis, dividindo a interface do usuário em componentes atômicos, moleculares, organizacionais, de páginas e de templates.
-- Singleton: Um padrão de design que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
 
 ## Installation
 1. Clone o repositório: ``git clone https://github.com/Haghalaz/squid-front-end-challenge.git``
