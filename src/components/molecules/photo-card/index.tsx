@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { AtSign, Calendar, Heart, MessageCircle } from "lucide-react";
 
 import { CardBody, CardContainer, CardItem } from "@atoms/3d-card";
@@ -5,6 +7,9 @@ import { CardBody, CardContainer, CardItem } from "@atoms/3d-card";
 import FormatDate from "@utils/formatter-date";
 
 export default function PhotoCard({ data }: { data: PhotoDetails }) {
+  const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
+
   if (!data) return;
 
   const { link, upvotes, comentarios, imagens, criadoEm, metadados } = data;
@@ -14,8 +19,20 @@ export default function PhotoCard({ data }: { data: PhotoDetails }) {
     <CardContainer className="w-full">
       <CardBody className="bg-gray-50 relative group/card border-black/[0.1] w-full h-auto rounded-xl p-4 border  ">
         <CardItem translateZ="80" className="w-full">
+          {isLoading && !hasError && <div className="absolute top-0 right-0 size-full bg-stone-200 animate-pulse aspect-square rounded-md" />}
+
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <img className="size-full aspect-square object-cover rounded-md" src={imagens.resolucaoMedia.url} alt="Instagram " />
+            <img
+              className="size-full aspect-square object-cover rounded-md"
+              src={imagens.resolucaoMedia.url}
+              alt="Instagram pic"
+              loading="lazy"
+              onLoad={() => setIsLoading(false)}
+              onError={() => {
+                setIsLoading(false);
+                setHasError(true);
+              }}
+            />
           </a>
 
           {hasUsersMention && (
