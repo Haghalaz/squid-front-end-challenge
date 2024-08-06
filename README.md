@@ -33,11 +33,14 @@ Garanta a responsividade e uma boa experiência de usuário, incluindo loaders, 
 - **Tailwind CSS**: Um framework CSS utilitário para construir designs personalizados de forma rápida.
 - **Biome**: Uma ferramenta de linting, formatação e análise de código para manter a qualidade e a consistência do código.
 - **SWR**: React hook para busca de dados. Ele retorna dados do cache (stale), envia uma solicitação de fetch (revalidate) e retorna os dados atualizados.
+- **Jest**: Um framework de testes em JavaScript para garantir a qualidade e a confiabilidade do código.
+- **React Testing Library**: Utilizado para testar componentes React de forma a garantir que eles se comportam como esperado.
 
 ## Padrões de projetos
 - **Atomic Design**: Uma metodologia para criar sistemas de design consistentes e escaláveis, dividindo a interface do usuário em componentes atômicos, moleculares, organizacionais, de páginas e de templates.
 - **Custom Hooks**: Abordagem no React para reutilizar lógica de estado entre componentes, encapsulando lógica de comportamento em funções reutilizáveis.
-  
+- **Automated Tests**: Utiliza Jest e React Testing Library para garantir que os componentes e hooks funcionem corretamente.  
+
 ## Instalação
 1. Clone o repositório: ``git clone https://github.com/Haghalaz/squid-front-end-challenge.git``
 2. Navegue até o diretório do projeto: ``cd squid-front-end-challenge``
