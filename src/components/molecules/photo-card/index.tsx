@@ -25,7 +25,7 @@ export default function PhotoCard({ data }: { data: PhotoDetails }) {
             <img
               className="size-full aspect-square object-cover rounded-md"
               src={imagens.resolucaoMedia.url}
-              alt="Instagram pic"
+              alt="Instagram"
               loading="lazy"
               onLoad={() => setIsLoading(false)}
               onError={() => {
