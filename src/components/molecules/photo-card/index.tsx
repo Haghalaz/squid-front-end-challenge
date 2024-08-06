@@ -15,25 +15,18 @@ export default function PhotoCard({ data }: { data: PhotoDetails }) {
       <CardBody className="bg-gray-50 relative group/card border-black/[0.1] w-full h-auto rounded-xl p-4 border  ">
         <CardItem translateZ="80" className="w-full">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <img
-              className="size-full aspect-square object-cover rounded-md"
-              src={imagens.resolucaoMedia.url}
-              alt="Instagram "
-            />
+            <img className="size-full aspect-square object-cover rounded-md" src={imagens.resolucaoMedia.url} alt="Instagram " />
           </a>
 
           {hasUsersMention && (
-            <CardItem
-              translateZ="20"
-              className="group absolute top-2 right-2 grid place-items-end gap-2"
-            >
+            <CardItem translateZ="20" className="group absolute top-2 right-2 grid place-items-end gap-2" data-testid="user-mentions-container">
               <div className="p-2 bg-gray-50 rounded-full">
                 <AtSign className="size-4" />
               </div>
 
-              <div className="bg-white shadow-lg p-2 opacity-0 w-0 overflow-hidden rounded-md -translate-y-1.5 transition-transform group-hover:w-max group-hover:opacity-100 group-hover:translate-y-0">
-                {metadados.users_in_photo?.map((user) => (
-                  <p key={user.user.username} className="text-sm select-none">
+              <div className="bg-white shadow-lg p-2 opacity-0 w-0 overflow-hidden rounded-md -translate-y-1.5 transition-transform group-hover:w-max group-hover:opacity-100 group-hover:translate-y-0" data-testid="user-mentions">
+                {metadados.users_in_photo.map((user) => (
+                  <p key={user.user.username} className="text-sm select-none" data-testid={`user-mention-${user.user.username}`}>
                     &#64;{user.user.username}
                   </p>
                 ))}
@@ -55,9 +48,7 @@ export default function PhotoCard({ data }: { data: PhotoDetails }) {
 
           <CardItem translateZ="20" className="flex gap-2 items-center">
             <Calendar className="size-4" />
-            <p className="text-xs truncate font-normal">
-              {FormatDate(criadoEm)}
-            </p>
+            <p className="text-xs truncate font-normal">{FormatDate(criadoEm)}</p>
           </CardItem>
         </div>
       </CardBody>

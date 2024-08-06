@@ -31,12 +31,12 @@ interface Images {
 
 interface Metadata {
   filter: string;
-  users_in_photo: UserInPhoto[];
+  users_in_photo: UserInPhoto[] | [];
   engagement: number;
   impressions: number;
   reach: number;
   saved: number;
-  idFacebook: string | null;
+  idFacebook?: string | null;
 }
 
 interface Reference {
